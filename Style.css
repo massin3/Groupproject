@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    align-items: center;
     margin: 50px;
 
 }
@@ -60,27 +58,33 @@ body{
     border-radius: 20px;
     margin-top: 10em;
 }
+
+.Ecwid img{
+    position: absolute;
+    bottom: 58%;
+    left: 63%;
+}
+
 .Ecwid p{
     font-size: 1.5rem;
-    padding: 1em 25em 1em 1em;
+    padding: 1em 20em 1em 1em;
 }
 .Ecwidinfo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1em 2em;
 }
 .Ecwidinfo{
     color: white;
 }
+
+.Ecwidname {
+    display: flex;
+}
+
 .Ecwidname a{
     text-decoration: none;
     color: white;
-}
-
-.Ecwid img{
-    position: absolute;
-    bottom: 64%;
-    left: 63%;
 }
 
 .Ecwidname img{
@@ -91,10 +95,6 @@ body{
     left: 20%;
     height: 50px;
     width: 50px;
-}
-
-.Ecwidname {
-    display: flex;
 }
 
 .sellaround{
@@ -135,7 +135,47 @@ body{
 }
 
 @media (max-width:768px){
+    .wrapper{
+            flex-direction: column;
+            align-items: center;
+    }
+    .submanage{
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+    }
     .Ecwid img{
-        
+        display: none;
+    }
+    .Ecwidinfo{
+        flex-direction: column;
+    }
+    .sellaround{
+        flex-direction: column;
+    }
+    .sellaroundnmb{
+        flex-direction: column;
+    }
+}
+@media (max-width:1500px){
+    .wrapper{
+            flex-direction: column;
+            align-items: center;
+    }
+    .submanage{
+            align-items: center;
+            gap: 10px;
+    }
+    .Ecwid img{
+        display: none;
+    }
+    .Ecwidinfo{
+        flex-direction: column;
+    }
+    .sellaround{
+        flex-direction: column;
+    }
+    .sellaroundnmb{
+        flex-direction: column;
     }
 }
