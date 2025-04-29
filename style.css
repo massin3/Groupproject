@@ -27,7 +27,7 @@ body, html{
 }
 
 .header{
-    position: absolute; /* Key: make navbar *over* hero */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
@@ -35,7 +35,7 @@ body, html{
     background: rgba(255, 255, 255, 0);
     display: flex;
     justify-content: space-around;
-    z-index: 10; /* Ensure it sits above the hero */
+    z-index: 10; 
   }
 
   .navbar ul {
@@ -48,7 +48,7 @@ body, html{
 
   .navbar a {
     text-decoration: none;
-    color: white; /* Adjust for visibility */
+    color: white;
     font-weight: bold;
   }
 
@@ -242,8 +242,8 @@ body, html{
     width: 80%;
     justify-items: center;
     align-items: center;
-    column-gap: 0; /* horizontal gaps only */
-    row-gap: 0; /* no vertical gaps */
+    column-gap: 0; 
+    row-gap: 0;
 }
 
 .gallery-images img {
@@ -254,3 +254,97 @@ body, html{
 
 /* Upcoming Events Section */
 
+.upcoming-events{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+}
+
+.upcoming-events h2{
+    font-size: 2.5rem;
+}
+
+.event-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 55%;
+    height: 90%;
+}
+
+.event-card{
+    padding: 10px;;
+    box-shadow: 0 0 10px rgba(148, 148, 148, 0.5);
+    transition: 0.5s ease;
+    background-color: rgb(255, 255, 255);
+}
+
+.event-card:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.event-card span{
+    color: red;
+}
+
+.upcoming-events img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Footer */
+
+.footer{
+    height: 600px;
+    background-color: #504f4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    width: 80%;
+    height:auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, minmax(150px, 1fr));
+    justify-content: center;
+    row-gap: 20px;
+
+}
+
+.footer ul{
+    list-style: none;
+    color: rgb(153, 153, 153);
+    line-height: 2rem;
+}
+
+.footer-para{
+    grid-column: 1 / -1;
+    color: rgb(153, 153, 153);
+    font-size: 1.2rem;
+    justify-self: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-para p{
+    transition: 0.5s ease;
+}
+
+.footer-para p:hover{
+    transform: scale(1.025);
+    transition: 0.5s ease;
+}
+
+.footer-para p{
+}
