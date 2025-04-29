@@ -302,15 +302,42 @@ body, html{
     align-items: center;
 }
 
+.footer h3{
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
 .footer-container{
     width: 80%;
-    height:auto;
     display: grid;
     grid-template-columns: repeat(4, minmax(150px, 1fr));
     grid-template-rows: repeat(2, minmax(150px, 1fr));
     justify-content: center;
-    row-gap: 20px;
+    justify-tracks: center;
+    column-gap: 20px;
+}
 
+.footer-about p{
+    color: #d8d8d8;
+}
+
+.footer-about button{
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #ff0000;
+    padding: 10px 20px;
+    transition: 0.5s ease;
+}
+
+.footer-about button:hover{
+    background-color: #ffffff00;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius:  20px; ;
+    transition: 0.5s ease;
+    transform: scale(1.05);
 }
 
 .footer ul{
@@ -319,7 +346,7 @@ body, html{
     line-height: 2rem;
 }
 
-.footer-para{
+.footer-copyright{
     grid-column: 1 / -1;
     color: rgb(153, 153, 153);
     font-size: 1.2rem;
@@ -330,11 +357,11 @@ body, html{
     align-items: center;
 }
 
-.footer-para p{
+.footer-copyright p{
     transition: 0.5s ease;
 }
 
-.footer-para p:hover{
+.footer-copyright p:hover{
     transform: scale(1.025);
     transition: 0.5s ease;
 }
