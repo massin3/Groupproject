@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Relaxing Room</title>
   </head>
   <body>
-    <!--HEADER-->
+    <!--------------------------------------------HEADER----------------------------------------------------->
 
     <header class="header">
       <div class="logo">
@@ -16,26 +17,26 @@
       <div class="navbar">
         <nav>
           <ul>
-            <li>HOME</li>
-            <li>ROOMS</li>
-            <li>EVENTS</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#booking">ROOMS</a></li>
+            <li><a href="#events">EVENTS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#footer">CONTACT</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!--HERO SECTION-->
+    <!--------------------------------------HERO SECTION----------------------------------------------------->
 
-    <div class="hero">
+    <div class="hero" id="home">
       <h1>Relaxing Room</h1>
       <p>YOUR ROOM, YOUR STAY</p>
     </div>
 
-    <!--BOOKING SECTION-->
+    <!-------------------------------------BOOKING SECTION--------------------------------------------------->
 
-    <div class="content">
+    <div class="content" id="booking">
       <div class="content-header">
         <h2>OUR ROOMS</h2>
       </div>
@@ -73,9 +74,9 @@
       </div>
     </div>
 
-    <!--ABOUT US-->
+    <!-----------------------------------------------ABOUT US------------------------------------------------>
 
-    <div class="about-us">
+    <div class="about-us" id="about">
       <div class="about-us-img">
         <img src="./images/room2.jpg" alt="" class="background-image">
         <img src="./images/room3.jpeg" alt="" class="overlay-image">
@@ -88,13 +89,13 @@
           magnam! Pariatur perspiciatis autem optio, quibusdam error nostrum
           dolor!
         </p>
-        <a href="#">WATCH VIDEO</a>
+        <a href="#">WATCH VIDEO →</a>
       </div>
     </div>
 
-    <!--HOTEL FEATURES-->
+    <!---------------------------------------------HOTEL FEATURES--------------------------------------------->
 
-    <div class="hotel-features">
+    <div class="hotel-features" id="features">
       <div class="title">
         <h2>Hotel Features</h2>
       </div>
@@ -134,9 +135,9 @@
       </div>
     </div>
 
-    <!--GALLERY-->
+    <!-------------------------------------------GALLERY----------------------------------------------------->
 
-    <div class="gallery">
+    <div class="gallery" id="gallery">
       <h2>Gallery</h2>
       <div class="gallery-images">
         <img src="./images/room1.jpg" alt="Gallery Image 1" />
@@ -150,9 +151,9 @@
       </div>
     </div>
 
-    <!--UPCOMING EVENTS-->
+    <!---------------------------------------UPCOMING EVENTS-------------------------------------------------->
 
-    <div class="upcoming-events">
+    <div class="upcoming-events" id="events">
       <h2>Upcoming Events</h2>
       <div class="event-cards-container">
         <div class="event-card">
@@ -193,11 +194,11 @@
       </div>
     </div>
 
-    <!--FOOTER-->
-    <footer class="footer">
+    <!---------------------------------------------FOOTER----------------------------------------------------->
+    <footer class="footer" id="footer">
       <div class="footer-container">
 
-        <div class="footer-about">
+        <div class="footer-card">
           <h3>About</h3>
           <br>
           <p>
@@ -209,7 +210,7 @@
           <button>Read More</button>
         </div>
   
-        <div class="footer-quick-menu">
+        <div class="footer-card">
           <h3>Quick Menu</h3>
           <br>
           <ul>
@@ -222,7 +223,7 @@
           </ul>
         </div>
   
-        <div class="footer-ministries">
+        <div class="footer-card">
           <h3>Ministries</h3>
           <br>
           <ul>
@@ -234,9 +235,17 @@
           </ul>
         </div>
   
-        <div class="footer-icons">
-          <h3>Social Icons</h3>
-          <br>
+        <div class="footer-card">
+          <div>
+            <h3>Social Icons</h3>
+          </div>
+            <br>
+          <div>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+           </div>
         </div>
         <div class="footer-copyright">
           <p>
