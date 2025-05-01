@@ -165,6 +165,7 @@ body, html{
 
 .background-image{
     width: 30vw;
+    max-width: 350px;
     height: auto;
     transition: 0.8s ease;
 }
@@ -179,6 +180,7 @@ body, html{
     top: 70%;
     left: 70%;
     width: 15vw;
+    max-width: 150px;
     height: auto;
     border: #ffffff solid 5px;
     transition: 0.8s ease;
@@ -265,9 +267,9 @@ body, html{
 }
 
 .gallery-images {
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(4, minmax(20%, 1fr));
-    width: 80%;
     justify-items: center;
     align-items: center;
     column-gap: 0; 
@@ -318,7 +320,8 @@ body, html{
 }
 
 .event-card{
-    max-height: 23em;
+    max-width: 20em;
+    max-height: 25em;
     padding: 2%;
     transition: 0.5s ease;
     background-color: rgb(255, 255, 255);
@@ -336,6 +339,8 @@ body, html{
 
 .upcoming-events img{
     width: 100%;
+    height: auto;
+    object-fit: cover;
     height: auto;
     object-fit: cover;
 }
@@ -387,6 +392,7 @@ body, html{
     color: #ffffff;
     background-color: #ff0000;
     padding: 2% 5%;
+    margin: 2% 0;
     transition: 0.5s ease;
 }
 
@@ -397,6 +403,10 @@ body, html{
     border-radius:  20px;
     transition: 0.5s ease;
     transform: scale(1.05);
+}
+
+.social-icons{
+    width: 100%;
 }
 
 .footer ul{
@@ -452,6 +462,8 @@ body, html{
     .about-us {
       flex-direction: column;
       padding: 2em;
+      justify-content: center;
+      align-items: center;
     }
   
     .about-us-img,
@@ -462,7 +474,7 @@ body, html{
     }
 
     .overlay-image{
-        display: none;
+       display: none;
     }
   
     .about-us-desc {
@@ -488,6 +500,8 @@ body, html{
     .event-cards-container {
       grid-template-columns: 1fr;
       width: 90%;
+      justify-items: center;
+      align-items: center;
     }
   
     .footer-container {
@@ -495,5 +509,7 @@ body, html{
       grid-template-rows: auto;
     }
   }
+  
+
   
   
